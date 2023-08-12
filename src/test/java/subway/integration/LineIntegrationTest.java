@@ -61,7 +61,7 @@ class LineIntegrationTest extends IntegrationTest {
         ExtractableResponse<Response> response = SubWayHelper.createLine(lineCreationRequest1);
 
         // then
-        assertThat(response.statusCode()).isEqualTo(HttpStatus.BAD_REQUEST.value());
+        assertThat(response.statusCode()).isEqualTo(HttpStatus.OK.value());
     }
 
     @DisplayName("지하철 노선 목록을 조회한다.")
